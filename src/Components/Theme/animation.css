@@ -1,0 +1,94 @@
+.start {
+  -webkit-animation: scale-up-center-in 0.4s both;
+  animation: scale-up-center-in 0.4s both;
+}
+
+.end {
+  -webkit-animation: scale-up-center-out 0.4s both;
+  animation: scale-up-center-out 0.4s both;
+}
+
+@-webkit-keyframes scale-up-center-in {
+  0% {
+    opacity: 0;
+    height: 0px;
+  }
+  70% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    height: 400px;
+  }
+}
+@keyframes scale-up-center-in {
+  0% {
+    opacity: 0;
+    height: 0px;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 400px;
+  }
+}
+
+@-webkit-keyframes scale-up-center-out {
+  0% {
+    opacity: 1;
+    height: 400px;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    height: 0px;
+  }
+}
+@keyframes scale-up-center-out {
+  0% {
+    opacity: 1;
+    height: 400px;
+  }
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    height: 0px;
+  }
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
